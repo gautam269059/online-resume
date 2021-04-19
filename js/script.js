@@ -1,3 +1,4 @@
+// Handling contact form through https://formspree.io/
 var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
@@ -11,10 +12,10 @@ var form = document.getElementById("my-form");
             'Accept': 'application/json'
         }
       }).then(response => {
-        status.innerHTML = "Thanks for your submission!";
+        status.innerHTML = '<div class="alert alert-success" role="alert">Thanks you for contacting me. I will reach out to you shortly!</div>';
         form.reset()
       }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form!"
+        status.innerHTML = '<div class="alert alert-danger" role="alert">Oops! There was a problem submitting your form!</div>'
       });
     }
     form.addEventListener("submit", handleSubmit)
