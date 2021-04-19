@@ -12,7 +12,7 @@ var form = document.getElementById("my-form");
             'Accept': 'application/json'
         }
       }).then(response => {
-        status.innerHTML = '<div class="alert alert-success" role="alert">Thanks you for contacting me. I will reach out to you shortly!</div>';
+        status.innerHTML = '<div class="alert alert-success" role="alert">Thank you for contacting me. I will reach out to you shortly!</div>';
         form.reset()
       }).catch(error => {
         status.innerHTML = '<div class="alert alert-danger" role="alert">Oops! There was a problem submitting your form!</div>'
