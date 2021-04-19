@@ -14,7 +14,7 @@ var form = document.getElementById("my-form");
         status.innerHTML = "Thanks for your submission!";
         form.reset()
       }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
+        status.innerHTML = "Oops! There was a problem submitting your form!"
       });
     }
     form.addEventListener("submit", handleSubmit)
